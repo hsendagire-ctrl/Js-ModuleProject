@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body id="body">
+    <div id="intro">
+      <h1>Tip Calculator</h1>
+      <h2>Type in the boxes, then press the button to use the calculator.</h2>
+      <p>
+        Enter the <b>cost</b> of your meal, then press <b>enter</b>:
+        <input type="number" id="basecost" />
+      </p>
+      <p>
+        Enter your <b>province</b> in Canada, then press <b>enter</b>:
+        <input type="text" id="gst" />
+      </p>
+    </div>
+    <br />
+    <p id="explain">
+      This info is necessary, because it determines the <b>tax</b> you pay if
+      there is one at all in your province. Assumed tip is 15%
+    </p>
+
+    <!-- Province List -->
+
+    <table id="tableofprov">
+      <tr>
+        <th>Province</th>
+        <th>Total Rate</th>
+      </tr>
+      <tr>
+        <td id="Alberta">Alberta</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td id="bc">British Columbia</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <td id="bc">Manitoba</td>
+        <td>12%</td>
+      </tr>
+      <tr>
+        <td id="nb">New Brunswick</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td id="Newfoundland">Newfoundland</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td id="nwt">Northwest Territories</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td id="novascotia">Nova Scotia</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td id="ontario">Ontario</td>
+        <td>13%</td>
+      </tr>
+      <tr>
+        <td id="pei">Prince Edward Island</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td id="qc">Quebec</td>
+        <td>14.98%</td>
+      </tr>
+      <tr>
+        <td id="Saskatchewan">Saskatchewan</td>
+        <td>11%</td>
+      </tr>
+      <tr>
+        <td id="yukon">Yukon</td>
+        <td>5%</td>
+      </tr>
+    </table>
+    <br />
+    <button id="btn">Calculate!</button>
+    <p id="costparagraph">
+      Here's the <b>total cost</b> of your meal:
+      <input type="number" name="" id="finalinput" />
+    </p>
+    <br />
+    <p><button id="modeswitch">Dark Mode</button></p>
+    <p><button id="lightmode">Light Mode</button></p>
+  </body>
+</html>
